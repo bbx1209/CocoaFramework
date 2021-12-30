@@ -7,28 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		82BEDB0A277D92BA00684044 /* CocoaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BEDB01277D92BA00684044 /* CocoaFramework.framework */; };
-		82BEDB0F277D92BA00684044 /* CocoaFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BEDB0E277D92BA00684044 /* CocoaFrameworkTests.m */; };
 		82BEDB10277D92BA00684044 /* CocoaFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 82BEDB04277D92BA00684044 /* CocoaFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82BEDB1B277D966200684044 /* NSString+Plus.h in Headers */ = {isa = PBXBuildFile; fileRef = 82BEDB19277D966200684044 /* NSString+Plus.h */; };
 		82BEDB1C277D966200684044 /* NSString+Plus.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BEDB1A277D966200684044 /* NSString+Plus.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		82BEDB0B277D92BA00684044 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82BEDAF8277D92BA00684044 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 82BEDB00277D92BA00684044;
-			remoteInfo = CocoaFramework;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		82BEDB01277D92BA00684044 /* CocoaFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82BEDB04277D92BA00684044 /* CocoaFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaFramework.h; sourceTree = "<group>"; };
-		82BEDB09277D92BA00684044 /* CocoaFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		82BEDB0E277D92BA00684044 /* CocoaFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaFrameworkTests.m; sourceTree = "<group>"; };
 		82BEDB19277D966200684044 /* NSString+Plus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Plus.h"; sourceTree = "<group>"; };
 		82BEDB1A277D966200684044 /* NSString+Plus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Plus.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,14 +27,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82BEDB06277D92BA00684044 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				82BEDB0A277D92BA00684044 /* CocoaFramework.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,7 +34,6 @@
 			isa = PBXGroup;
 			children = (
 				82BEDB03277D92BA00684044 /* CocoaFramework */,
-				82BEDB0D277D92BA00684044 /* CocoaFrameworkTests */,
 				82BEDB02277D92BA00684044 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +42,6 @@
 			isa = PBXGroup;
 			children = (
 				82BEDB01277D92BA00684044 /* CocoaFramework.framework */,
-				82BEDB09277D92BA00684044 /* CocoaFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,14 +54,6 @@
 				82BEDB1A277D966200684044 /* NSString+Plus.m */,
 			);
 			path = CocoaFramework;
-			sourceTree = "<group>";
-		};
-		82BEDB0D277D92BA00684044 /* CocoaFrameworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				82BEDB0E277D92BA00684044 /* CocoaFrameworkTests.m */,
-			);
-			path = CocoaFrameworkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,24 +89,6 @@
 			productReference = 82BEDB01277D92BA00684044 /* CocoaFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		82BEDB08277D92BA00684044 /* CocoaFrameworkTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 82BEDB16277D92BA00684044 /* Build configuration list for PBXNativeTarget "CocoaFrameworkTests" */;
-			buildPhases = (
-				82BEDB05277D92BA00684044 /* Sources */,
-				82BEDB06277D92BA00684044 /* Frameworks */,
-				82BEDB07277D92BA00684044 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				82BEDB0C277D92BA00684044 /* PBXTargetDependency */,
-			);
-			name = CocoaFrameworkTests;
-			productName = CocoaFrameworkTests;
-			productReference = 82BEDB09277D92BA00684044 /* CocoaFrameworkTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,9 +99,6 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					82BEDB00277D92BA00684044 = {
-						CreatedOnToolsVersion = 13.2.1;
-					};
-					82BEDB08277D92BA00684044 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -170,20 +117,12 @@
 			projectRoot = "";
 			targets = (
 				82BEDB00277D92BA00684044 /* CocoaFramework */,
-				82BEDB08277D92BA00684044 /* CocoaFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		82BEDAFF277D92BA00684044 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		82BEDB07277D92BA00684044 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -201,23 +140,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82BEDB05277D92BA00684044 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				82BEDB0F277D92BA00684044 /* CocoaFrameworkTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		82BEDB0C277D92BA00684044 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 82BEDB00277D92BA00684044 /* CocoaFramework */;
-			targetProxy = 82BEDB0B277D92BA00684044 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		82BEDB11277D92BA00684044 /* Debug */ = {
@@ -392,36 +315,6 @@
 			};
 			name = Release;
 		};
-		82BEDB17277D92BA00684044 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q3ZAA58Z58;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = buxiangbo.CocoaFrameworkTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		82BEDB18277D92BA00684044 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q3ZAA58Z58;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = buxiangbo.CocoaFrameworkTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -439,15 +332,6 @@
 			buildConfigurations = (
 				82BEDB14277D92BA00684044 /* Debug */,
 				82BEDB15277D92BA00684044 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		82BEDB16277D92BA00684044 /* Build configuration list for PBXNativeTarget "CocoaFrameworkTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				82BEDB17277D92BA00684044 /* Debug */,
-				82BEDB18277D92BA00684044 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
