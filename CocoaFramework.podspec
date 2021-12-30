@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CocoaFramework"
-  spec.version      = "0.0.1"
-  spec.summary      = "some category for developers."
+  spec.version      = "0.0.2"
+  spec.summary      = "a frame work for developers."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,10 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-This is a framework create by cocoapod
+		this is a frame work create by cocoapod
                    DESC
 
-  spec.homepage     = "https://github.com/bbx1209/cocoaFramework"
+  spec.homepage     = "https://github.com/bbx1209/CocoaFramework"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ This is a framework create by cocoapod
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/bbx1209/cocoaFramework.git", :tag => "0.0.1" }
+  spec.source       = { :git => "https://github.com/bbx1209/CocoaFramework.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -94,7 +94,7 @@ This is a framework create by cocoapod
   spec.source_files  = "CocoaFramework", "CocoaFramework/**/*.{h,m}"
   spec.exclude_files = "CocoaFramework/Exclude"
 
-  # spec.public_header_files = "Classes/**/*.h"
+  # spec.public_header_files = "CocoaFramework/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
