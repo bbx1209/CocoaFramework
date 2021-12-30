@@ -8,5 +8,8 @@
 #import "NSString+Plus.h"
 
 @implementation NSString (Plus)
+- (void)test; {
+    NSLog(@"test ");
+}
 
 @end
